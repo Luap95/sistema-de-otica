@@ -1,8 +1,12 @@
 package Produtos;
 
-public class Lente extends Produto{
+public abstract class Lente extends Produto{
     private double esferico;
     private double cilindrico;
+    private double esfMax;
+    private double esfMin;
+    private double cilMax;
+    private double cilMin;
 
     public void setDioptria(double esf, double cil) {
         if(esf % 0.25 != 0 && cil % 0.25 != 0){
@@ -14,4 +18,6 @@ public class Lente extends Produto{
     public String getDioptria(){
         return esferico + "/" + cilindrico;
     }
+
+    public abstract void grade(double esf, double cil);
 }

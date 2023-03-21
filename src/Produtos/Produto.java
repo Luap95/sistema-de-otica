@@ -28,8 +28,8 @@ public abstract class Produto {
         return preco;
     }
 
-    public void setPreco(BigDecimal preco) {
-        this.preco = preco;
+    public void setPreco(double preco) {
+        this.preco = BigDecimal.valueOf(preco);
     }
 
     public TipoProduto getTipo() {
