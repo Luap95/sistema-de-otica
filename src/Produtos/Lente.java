@@ -39,4 +39,13 @@ public abstract class Lente extends Produto{
             throw new DioptriaInvalidaException("Valor invalido. Digite dioptria multipla de 0.25.");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Produto: " + super.getNome() + "\n"
+                + "Preço: " + super.getPreco() + "\n"
+                + "Diopria: " + this.getDioptria() + "\n";
+
+
+    }
 }

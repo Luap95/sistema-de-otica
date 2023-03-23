@@ -5,6 +5,10 @@ public class TestaProduto {
         Lente lente = new Hinex();
         lente.setDioptria(-1.25, -0.25);
 
-        System.out.println(lente.getDioptria());
+        System.out.println(lente);
+
+        Armacao armacao = new Oakley();
+
+        System.out.println(armacao);
     }
 }
