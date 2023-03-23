@@ -36,7 +36,7 @@ public abstract class Lente extends Produto{
 
     private void validaDioptria(double esf, double cil){
         if(esf % 0.25 != 0 || cil % 0.25 != 0){
-            throw new DioptriaInvalidaException("Valor invalido. Digite numeros multiplos de 0.25.");
+            throw new DioptriaInvalidaException("Valor invalido. Digite dioptria multipla de 0.25.");
         }
     }
 }
