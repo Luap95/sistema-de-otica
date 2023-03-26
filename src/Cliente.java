@@ -8,4 +8,11 @@ public class Cliente {
         this.telefone = telefone;
         this.cpf = cpf;
     }
+
+    @Override
+    public String toString(){
+        return "Nome: " + nome + "\n" +
+                "Telefone: " + telefone + "\n" +
+                "CPF: " + cpf;
+    }
 }

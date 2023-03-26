@@ -39,4 +39,9 @@ public abstract class Produto {
     public void setTipo(TipoProduto tipo) {
         this.tipo = tipo;
     }
+
+    @Override
+    public String toString(){
+        return this.getNome();
+    }
 }
