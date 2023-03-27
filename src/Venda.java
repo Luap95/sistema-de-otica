@@ -13,14 +13,12 @@ public class Venda {
     public void setCliente(Cliente cliente){
         this.cliente = cliente;
     }
-    public Cliente cliente(){
-        return cliente;
+    public Cliente getCliente(){
+        return this.cliente;
     }
-
     public void setProdutos(Produto produto){
         this.produtos.add(produto);
     }
-
     public double getTotalVenda() {
         double sum = 0.0;
         for (Produto produto : this.produtos) {
