@@ -19,5 +19,7 @@ public class TestaVenda {
         venda.setProdutos(armacao);
 
         System.out.println(venda);
+
+        System.out.println(venda.getTotalVenda());
     }
 }

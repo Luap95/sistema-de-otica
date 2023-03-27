@@ -1,11 +1,14 @@
 import Produtos.Produto;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Venda {
     private Cliente cliente;
-    private Set<Produto> produtos = new HashSet<>();
+    private List<Produto> produtos = new ArrayList<Produto>();
 
     public void setCliente(Cliente cliente){
         this.cliente = cliente;
@@ -16,6 +19,15 @@ public class Venda {
 
     public void setProdutos(Produto produto){
         this.produtos.add(produto);
+    }
+
+    public double getTotalVenda() {
+        double sum = 0.0;
+        for (Produto produto : this.produtos) {
+            double preco = produto.getPreco().doubleValue();
+            sum += preco;
+        }
+        return sum;
     }
 
     @Override
