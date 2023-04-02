@@ -1,3 +1,5 @@
+package Venda;
+
 import Produtos.Produto;
 
 import java.math.BigDecimal;
@@ -9,6 +11,7 @@ import java.util.Set;
 public class Venda {
     private Cliente cliente;
     private List<Produto> produtos = new ArrayList<Produto>();
+    private
 
     public void setCliente(Cliente cliente){
         this.cliente = cliente;

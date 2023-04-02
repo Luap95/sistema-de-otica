@@ -1,6 +1,7 @@
 import Produtos.Hinex;
 import Produtos.Oakley;
 import Produtos.Produto;
+import Venda.Venda;
 
 public class TestaVenda {
     public static void main(String[] args) {
