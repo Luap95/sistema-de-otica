@@ -1,5 +1,5 @@
 package Produtos;
-
+import Exception.*;
 public abstract class Lente extends Produto{
     private double esferico;
     private double cilindrico;

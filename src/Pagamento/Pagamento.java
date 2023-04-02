@@ -2,7 +2,7 @@ package Pagamento;
 
 import java.math.BigDecimal;
 
-public abstract class Pagamento {
+public class Pagamento {
     private BigDecimal valor;
     private FormaPagamento pagamento;
 

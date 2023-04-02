@@ -1,4 +1,5 @@
 import Cliente.Cliente;
+import Pagamento.FormaPagamento;
 import Produtos.Hinex;
 import Produtos.Oakley;
 import Produtos.Produto;
@@ -19,6 +20,17 @@ public class TestaVenda {
         venda.setProdutos(lenteOd);
         venda.setProdutos(lenteOe);
         venda.setProdutos(armacao);
+
+        System.out.println("Valor a pagar: R$" + venda.valorAPagar());
+        venda.setPagamentos(300, FormaPagamento.DINHEIRO);
+        System.out.println("Valor a pagar: R$" + venda.valorAPagar());
+        venda.setPagamentos(200, FormaPagamento.CREDITO);
+        System.out.println("Valor a pagar: R$" + venda.valorAPagar());
+        venda.setPagamentos(100, FormaPagamento.DEBITO);
+        System.out.println("Valor a pagar: R$" + venda.valorAPagar());
+        venda.setPagamentos(160, FormaPagamento.PIX);
+
+        System.out.println("Valor a pagar: R$" + venda.valorAPagar());
 
         System.out.println(venda);
 
