@@ -1,3 +1,4 @@
+import Cliente.Cliente;
 import Produtos.Hinex;
 import Produtos.Oakley;
 import Produtos.Produto;

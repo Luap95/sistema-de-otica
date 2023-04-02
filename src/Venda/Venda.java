@@ -1,17 +1,16 @@
 package Venda;
 
+import Pagamento.Pagamento;
 import Produtos.Produto;
-
+import Cliente.Cliente;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Venda {
     private Cliente cliente;
     private List<Produto> produtos = new ArrayList<Produto>();
-    private
+    private List<Pagamento> pagamentos = new ArrayList<Pagamento>();
 
     public void setCliente(Cliente cliente){
         this.cliente = cliente;
@@ -34,7 +33,7 @@ public class Venda {
     @Override
     public String toString(){
 
-        return "Cliente: " + this.cliente + "\n"
+        return "Cliente.Cliente: " + this.cliente + "\n"
                 + this.produtos;
     }
 }
